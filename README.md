@@ -1,2 +1,2 @@
 # VallinRomo_CSCI2270_FinalProject
-hi
+This file will have the project proposal, after I have one in mind...
