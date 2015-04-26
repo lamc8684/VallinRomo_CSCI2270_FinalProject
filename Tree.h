@@ -31,5 +31,6 @@ class Tree
         Node *tracker;
         int Probabilities;
 };
+//Sync test
 
 #endif // TREE_H
