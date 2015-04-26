@@ -4,7 +4,9 @@
 
 struct Node{
     bool head;
-
+    Node *right;
+    Node *left;
+    Node *parent;
     Node() {};
 
     Node(bool face){
@@ -18,18 +20,19 @@ class Tree
         Tree();
         void flipcoin();
         void forceflip();
-        void allPossibilities();
+        void allPossibilities(Node *);
         void probability(int head, int tail);
         void printPastFlips();
         void reset();
         void printCounter();
-        void compareProbabilities(int Probabilities);
+        void compareProbabilities(Probabilities);
         int Probabilities;
         virtual ~Tree();
     protected:
     private:
         int counter;
         Node *tracker;
+        Node *root;
 
 };
 //Sync test

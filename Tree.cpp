@@ -22,6 +22,22 @@ else //tails
 
 }
 
+void Tree::initializeAllPoss(node *tracker){
+Node *x=tracker;
+allPossibilities(x);
+counter=0;
+}
+
+void Tree::allPossibilities(Node *x){
+//count the leaves of the subtree recursively
+while(x->right!=NULL)
+    allPossibilities(x->right);
+while(x->left!=NULL)
+    allPossibilities(x->left);
+if(x->left==NULL&&x->right==NULL)
+    counter++;
+}
+
 Tree::~Tree()
 {
     //dtor
