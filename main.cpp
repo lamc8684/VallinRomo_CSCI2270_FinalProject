@@ -18,6 +18,7 @@ void displayMenu(){
 
 int main()
 {
+    char input;
 
     while(getline(cin,input)){
         if(input == "1"){
