@@ -26,21 +26,8 @@ Tree::~Tree()
 {
     //dtor
 }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
-bool forceFlip(){
+bool Tree::forceFlip(){
 
-    cout<<"Do you want it to be heads or tails? <H/T> "<<endl;
 
 }

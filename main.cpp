@@ -50,6 +50,25 @@ int main()
             displayMenu();
         }
         if(input == "9"){
+            bool isHeads;
+            char input;
+            bool choosing = true;
+            cout<<"Do you want it to be heads or tails? <H/T> "<<endl;
+            while(choosing){
+                cin>>input;
+                if(input == 'h'||input=='H'){
+                    bool isHeads = true;
+                    break;
+                }
+                else if(input == 't'||input=='T'){
+                    bool isHeads = false;
+                    break;
+                }
+                else{
+                    cout<<"Invalid input, choose again. <H/T>"<<endl;
+                }
+            }
+            forceFlip(flip);
             displayMenu();
         }
         if(input == "10"){
