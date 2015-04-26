@@ -4,8 +4,8 @@ using namespace std;
 void displayMenu(){
     cout<<"======Main Menu======\n";
     cout<<"1. Build Probability Tree\n";
-    cout<<"2. Calculate Probabilities\n";
-    cout<<"3. Flip Coin\n";
+    cout<<"2. Flip Coin\n";
+    cout<<"3. Calculate Probabilities\n";
     cout<<"4. Reset Tree\n";
     cout<<"5. Count Total Probabilities\n";
     cout<<"6. Show Previous Flip Outcomes\n";
@@ -22,6 +22,10 @@ int main()
 
     while(getline(cin,input)){
         if(input == "1"){
+            int num;
+            cout<<"How many tosses do you want to make?\n";
+            getline(cin, num)
+            Tree DadTree = new Tree(num); //I don-t know if this is the correct way to inititallize the tree
             displayMenu();
         }
         if(input == "2"){
