@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Tree.h"
 using namespace std;
 
 void displayMenu(){
@@ -18,14 +19,15 @@ void displayMenu(){
 
 int main()
 {
-    char input;
+    string input;
 
     while(getline(cin,input)){
         if(input == "1"){
-            int num;
+            string num;
             cout<<"How many tosses do you want to make?\n";
-            getline(cin, num)
-            Tree DadTree = new Tree(num); //I don-t know if this is the correct way to inititallize the tree
+            getline(cin, num);
+            int number=atoi(num.c_str());
+            Tree *DadTree = new Tree(number); //I don-t know if this is the correct way to inititallize the tree
             displayMenu();
         }
         if(input == "2"){

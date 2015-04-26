@@ -1,6 +1,6 @@
 #include "Tree.h"
 
-Tree::Tree()
+Tree::Tree(int number)
 {
     //ctor
 }
