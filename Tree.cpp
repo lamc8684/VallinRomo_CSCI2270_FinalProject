@@ -5,6 +5,8 @@ Tree::Tree()
     //ctor
 }
 
+//checking merge capabilities
+
 void Tree::flipcoin(){
 //0 is Tails and 1 is Heads
 //random number generator indicates heads or tails
@@ -27,6 +29,7 @@ Node *x=tracker;
 allPossibilities(x);
 counter=0;
 }
+
 
 void Tree::allPossibilities(Node *x){
 //count the leaves of the subtree recursively
