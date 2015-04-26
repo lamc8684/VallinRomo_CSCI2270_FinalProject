@@ -20,11 +20,11 @@ class Tree
         Tree(int);
         void flipcoin(); //finished
         void forceflip();
-        void allPossibilities(Node *); //
+        void allPossibilities(Node *); //finished
         void probability(int head, int tail);
-        void initializeAllPoss(Node*);
-        void printPastFlips();
-        void reset();
+        void initializeAllPoss(Node*); //finished helper function
+        void printPastFlips(); //finished
+        void reset(); //finished
         void printCounter();
         void compareProbabilities(int);
         int Probabilities;

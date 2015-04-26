@@ -25,6 +25,8 @@ else //tails
 }
 
 void Tree::initializeAllPoss(node *tracker){
+//helper function for allPossibilities
+//new pointer so we don't lose track of the tracker pointer position
 Node *x=tracker;
 allPossibilities(x);
 counter=0;
@@ -37,8 +39,20 @@ while(x->right!=NULL)
     allPossibilities(x->right);
 while(x->left!=NULL)
     allPossibilities(x->left);
+//count all leaves
 if(x->left==NULL&&x->right==NULL)
     counter++;
+}
+
+void Tree::printPastFlips(){
+    Node *x=tracker;
+    while(x!=root){
+        if(x->head==true)
+            cout<<"Heads ";
+        else
+            cout<<"Tails ";
+        x=x->parent;
+    }
 }
 
 Tree::~Tree()
