@@ -23,13 +23,14 @@ class Tree
         void printPastFlips();
         void reset();
         void printCounter();
-        void compareProbabilities;
+        void compareProbabilities(int Probabilities);
+        int Probabilities;
         virtual ~Tree();
     protected:
     private:
         int counter;
         Node *tracker;
-        int Probabilities;
+
 };
 
 #endif // TREE_H
