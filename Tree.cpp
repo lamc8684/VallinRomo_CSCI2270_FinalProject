@@ -42,3 +42,8 @@ Tree::~Tree()
 {
     //dtor
 }
+
+bool Tree::forceFlip(){
+
+
+}
