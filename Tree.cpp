@@ -55,6 +55,10 @@ void Tree::printPastFlips(){
     }
 }
 
+void Tree::undoFlip(){
+tracker=tracker->parent;
+}
+
 Tree::~Tree()
 {
     //dtor
