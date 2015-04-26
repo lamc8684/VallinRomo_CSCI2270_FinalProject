@@ -17,16 +17,16 @@ struct Node{
 class Tree
 {
     public:
-        Tree();
-        void flipcoin();
+        Tree(int);
+        void flipcoin(); //finished
         void forceflip();
-        void allPossibilities(Node *);
+        void allPossibilities(Node *); //
         void probability(int head, int tail);
         void initializeAllPoss(Node*);
         void printPastFlips();
         void reset();
         void printCounter();
-        void compareProbabilities(Probabilities);
+        void compareProbabilities(int);
         int Probabilities;
         virtual ~Tree();
     protected:
