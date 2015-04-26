@@ -27,6 +27,7 @@ class Tree
         void reset(); //finished
         void printCounter();
         void compareProbabilities(int);
+        void undoFlip();
         int Probabilities;
         virtual ~Tree();
     protected:
