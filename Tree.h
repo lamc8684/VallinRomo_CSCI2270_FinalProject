@@ -22,6 +22,7 @@ class Tree
         void forceflip();
         void allPossibilities(Node *);
         void probability(int head, int tail);
+        void initializeAllPoss(Node*);
         void printPastFlips();
         void reset();
         void printCounter();
