@@ -1,2 +1,2 @@
 # VallinRomo_CSCI2270_FinalProject
-This file will have the project proposal, after I have one in mind...
+This file will use a binary tree, and will be able to calculate probabillity of fliping a coin
